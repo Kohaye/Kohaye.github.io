@@ -4,10 +4,25 @@
     <style>
       .header{text-align: center;}
       .header{font-size: 50px;}
-/*       heading {
-        text-align: center;
-        font-size: 50px;
-      } */
+      article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 300px; /* only for demonstration, should be removed */
+      }
+      section:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
       navi {
         text-align: center;
         list-style-type: none;
