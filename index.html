@@ -1,47 +1,67 @@
   <!DOCTYPE HTML>
+<!-- I create comments by typing in what I want to have as a comment, highlight the
+comments that I just typed in and press ctrl+/ to comment out the selection -->
+<!-- I decided to use lang="en" because when I checked my html validation it 
+suggested, since it registered the language I was using to be english -->
 <html lang="en">
+<!-- Here I open up the head and make the title of the tab in the browser
+relative to the page that's open. I do this for each html page (I have 3) -->
 <head>
 <title> Korey Hayes Main </title>
 <link rel="stylesheet" href="pagestyles.css">
+<!-- I call to the CSS Stylesheet that I created and close the head-->
 </head>
+<!-- I open the body to edit what the users will see in their browser-->
 <body>
-
+  <!--I wanted this image I took to be at the top of each html page on my web page
+and I wanted to set the width to be 100% so that it spanned the width of the browser
+window -->
   <h1><img class="image" src="images/MattawaRiverCrop.jpg" alt="Mattawa River"></h1> 
-
-  <div><h1> KOREY HAYES </h1></div>
-
-  <div>
+<!--Since this web page is being made like it's my resume, I have my name in big,
+block lettering-->
+  <h1> KOREY HAYES </h1>
+<!-- I open up my navigation area for the links to this page and the other two
+I also style the navigation bar in the CSS file-->
   <nav>
+      <!-- I started an unordered list to have the links show with no numbers-->
   <ul>
+    <!--each link is part of my overall web page so I was able to trim to just the file name-->
+    <!-- each page has the link to its page set as the class="active" so the background color is different-->
     <li><a class="active" href="https://kohaye.github.io/index.html">MAIN</a></li>
     <li><a href="https://kohaye.github.io/education.html">EDUCATION</a></li>
     <li><a href="https://kohaye.github.io/experience.html">EXPERIENCE</a></li>
+    <!-- Close the list-->
   </ul>
+      <!--Close the navigation area-->
   </nav>
-  </div>
-
+  <!-- Open a section that hold an article and an aside. This is my HTML way to make columns-->
   <section>
-
+<!--I used this aside to have a panel of photos on one side of the page, apart from the article-->
     <aside>
+      <!-- unordered list again -->
         <ul>
+          <!-- Each image is local to my repository and owned by me so I was able to trim the file path-->
           <li><img class="image" src="images/Annaburl.jpg" alt="Annaburl"></li>
           <li><img class="image" src="images/BigAsh_Small.jpg" alt="BigAshTree"></li>
           <li><img class="image" src="images/Lakers_Small.jpg" alt="LakeTroutHarvest"></li>
+      <!-- close the list-->
       </ul>
+    <!--close the aside-->
     </aside>
-
+    <!-- Open the article section-->
+    <!--Here I begin my profile with a heading and carry on with multiple paragraphs-->
     <article> <h3> Profile </h3>
-      <ul>
-        <li><p>
+      <!-- To have a break in between paragraphs, I close my paragraph "</p>" and open a
+new one "<p>"-->
+      <p>
           I'm a man who craves adventure and the outdoors. I'm always doing something outside in
           my free time whether it's fishing, hunting, wandering the woods with my dog or just
           staring at the majesty of trees. I grew up in the city of Windsor, and for my whole
           life I wanted to get away and live near forested areas so I can learn how to do the
           activities I've dreamed about as a child. I'm most interested in passing my love and
           knowledge of the outdoors to my daughter who is already showing signs because she hates
-          being cooped up when there's a whole world out there for her to explore.</p></li>
-        <li> </li>
-        <li><p>
+          being cooped up when there's a whole world out there for her to explore.</p>
+          <p>
           My first priority, of course, is being a dad. I'm trying to lead by example by getting
           a stellar education to obtain a job that I will enjoy doing. Currently I have a Forestry
           Technician diploma from Sir Sandford Fleming college and I'm in the GIS: Cartography
@@ -53,9 +73,8 @@
           veterinary technician. She works every Friday and Saturday, so those days are my dedicated
           baby days and they are the days of the week that I look forward to the most each and every
           week. Being a dad has been one of the greatest experiences of my life and I wouldn't trade it
-          for anything in the world. I'm so glad I get to be one for the rest of my life.</p></li>
-        <li> </li>
-        <li><p>
+          for anything in the world. I'm so glad I get to be one for the rest of my life.</p>
+          <p>
           The main reason why I decided to enter the post-graduate program is because during my time
           in the Forestry Technician program, I developed a love for creating maps. I have a lot of 
           fun using the various softwares to create visual representations of something that's trying
@@ -64,9 +83,8 @@
           I've also created a map to show various deciduous and coniferous forest areas around where 
           I hunt, with contours, to try to predict where deer and moose may be located at any given
           time. There's such a plethora of concepts that can be communicated through the use of maps
-          and the artistry behind their creation is a beautiful science.</p></li>
-        <li> </li>
-        <li><p>
+          and the artistry behind their creation is a beautiful science.</p>
+          <p>
           I'm also trying to teach myself how to hunt with a recurve bow. It was gifted to me many
           years ago, before I moved to the Kawarthas, and I never really practiced with it until
           this year. I'm hoping to use it when I go on this year's moose hunt during 
@@ -74,10 +92,18 @@
           out into the back yard and fire off a bunch of arrows at a target about 20 yards away.
           It's a great break from school and a great way to dedicate some time towards being
           a better archer, and ensuring that if I ever get the chance at harvesting an animal,
-          it's a clean and ethical ending.</p></li>
-      </ul>
+          it's a clean and ethical ending.</p>
+          <!-- close the article section -->
     </article>
+    <!--close the section-->
+  <!-- in CSS I had to make sure that I put content:"" and selection:after so that the footer wouldn't just jump
+to the top of the section. I used https://www.w3schools.com/html/html_layout.asp to show me how that worked-->
   </section>
+  <!-- since I used w3schools to learn how all of the HTML and CSS coding works, I felt the need to place
+my source for the tutorials at the bottom. Everything in this webpage was sourced from w3schools as it says
+in the footer-->
   <footer> Source: <a href="https://www.w3schools.com">w3schools.com</a> for tutorials on HTML and CSS </footer>
+  <!-- Close the body-->
 </body>
+  <!-- end of the html file-->
 </html>
