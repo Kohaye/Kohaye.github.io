@@ -9,24 +9,24 @@
       .footer{text-align:center;}
       .footer{color:white;}
       .footer{font-size:14px;}
-      impan {
+      .impan {
         float: left;
         padding: 30px;
         width: 20%;
         background-color: #660;
       }
-      overview {
+      article {
         float: right;
         padding: 30px;
         width: 70%;
         font-size:20px;
       }
-      coltab:after {
+      section:after {
         content: "";
         display: table;
         clear: both;
       }
-      navi {
+      nav {
         background-color: #550;
         text-align: center;
         list-style-type: none;
@@ -35,22 +35,26 @@
     </style>
   </head>
   <body>
+    
     <h1><img src="images/MattawaRiverCrop.jpg" alt="Mattawa River" style="width:100%;">   
-    <hr></h1> 
-    <h1 class="header"> KOREY HAYES <hr> </h1>
-    <navi>
+      
+    <div><h1 class="header"> KOREY HAYES </h1></div>
+    
+    <div>
+    <nav>
       <li><a href="https://kohaye.github.io/education.html">EDUCATION</a>
         <a href="https://kohaye.github.io/experience.html">EXPERIENCE</a></li> 
-    <hr>
-    </navi>
-
+    </nav>
+    </div>
+      
     <h1 style=text-align:center>MAIN PAGE</h1>
-    <coltab>
-      <impan> <img src="images/Annaburl.jpg" alt="Annaburl" style="width:100%;"><br>
+      
+    <section>
+      <p class="impan"> <img src="images/Annaburl.jpg" alt="Annaburl" style="width:100%;"><br>
         <img src="images/BigAsh_Small.jpg" alt="BigAshTree" style="width:100%;"><br>
         <img src="images/Lakers_Small.jpg" alt="LakeTroutHarvest" style="width:100%;"><br>
-      </impan>
-      <p><overview> I'm a man who craves adventure and the outdoors. I'm always doing something outside in
+      </p>
+      <p><article> I'm a man who craves adventure and the outdoors. I'm always doing something outside in
         my free time whether it's fishing, hunting, wandering the woods with my dog or just
         staring at the majesty of trees. I grew up in the city of Windsor, and for my whole
         life I wanted to get away and live near forested areas so I can learn how to do the
@@ -86,9 +90,9 @@
         It's a great break from school and a great way to dedicate some time towards being
         a better archer, and ensuring that if I ever get the chance at harvesting an animal,
         it's a clean and ethical ending.<br><br>
-      </overview>
+      </article>
       </p>
-    </coltab>
+    </section>
     <h2 class="footer"> Source: <a href="https://www.w3schools.com">w3schools.com</a> for tutorials on HTML and CSS </h2>
   </body>
 </html>
