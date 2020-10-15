@@ -1,39 +1,67 @@
-  <!DOCTYPE HTML>
+<!DOCTYPE HTML>
+<!-- I create comments by typing in what I want to have as a comment, highlight the
+comments that I just typed in and press ctrl+/ to comment out the selection -->
+<!-- I decided to use lang="en" because when I checked my html validation it 
+suggested, since it registered the language I was using to be english -->
 <html lang="en">
+<!-- Here I open up the head and make the title of the tab in the browser
+relative to the page that's open. I do this for each html page (I have 3) -->
 <head>
 <title> Korey Hayes Experience </title>
+<!-- I call to the CSS Stylesheet that I created and close the head-->
 <link rel="stylesheet" href="pagestyles.css">
 </head>
+<!-- I open the body to edit what the users will see in their browser-->
 <body>
-
+  <!--I wanted this image I took to be at the top of each html page on my web page
+and I wanted to set the width to be 100% so that it spanned the width of the browser
+window -->
   <h1><img class="image" src="images/MattawaRiverCrop.jpg" alt="Mattawa River"></h1> 
-
-  <div><h1> KOREY HAYES </h1></div>
-
-  <div>
+<!--Since this web page is being made like it's my resume, I have my name in big,
+block lettering-->
+  <h1> KOREY HAYES </h1>
+<!-- I open up my navigation area for the links to this page and the other two
+I also style the navigation bar in the CSS file-->
   <nav>
+  <!-- I started an unordered list to have the links show with no numbers-->
   <ul>
+    <!--each link is part of my overall web page so I was able to trim to just the file name-->
+    <!-- each page has the link to its page set as the class="active" so the background color is different-->
     <li><a class="active" href="experience.html">EXPERIENCE</a></li>
     <li><a href="index.html">MAIN PAGE</a></li>
-    <li><a href="education.html">EDUCATION</a></li>      
+    <li><a href="education.html">EDUCATION</a></li>     
+    <!-- Close the list-->
   </ul>
+  <!--Close the navigation area-->
   </nav>
-  </div>
-
+  <!-- Open a section that hold an article and an aside. This is my HTML way to make columns-->
   <section>
-
+    <!--I used this aside to have a panel of photos on one side of the page, apart from the article-->
     <aside>
+      <!-- unordered list again -->
         <ul>
+          <!-- Each image is local to my repository and owned by me so I was able to trim the file path-->
           <li><img class="image" src="images/Annaburl.jpg" alt="Annaburl"></li>
           <li><img class="image" src="images/BigAsh_Small.jpg" alt="BigAshTree"></li>
           <li><img class="image" src="images/Lakers_Small.jpg" alt="LakeTroutHarvest"></li>
+      <!-- close the list-->
       </ul>
+    <!--close the aside-->  
     </aside>
-
+    <!-- Open the article section-->
+    <!-- I simply put this text so I can hand it in as is for the marks and work on it for myself later-->
     <article> <h3> PAGE CURRENTLY UNDER CONSTRUCTION </h3>
-
+    <!-- close the article section -->
     </article>
+  <!--close the section-->
+  <!-- in CSS I had to make sure that I put content:"" and selection:after so that the footer wouldn't just jump
+to the top of the section. I used https://www.w3schools.com/html/html_layout.asp to show me how that worked-->
   </section>
+  <!-- since I used w3schools to learn how all of the HTML and CSS coding works, I felt the need to place
+my source for the tutorials at the bottom. Everything in this webpage was sourced from w3schools as it says
+in the footer-->
   <footer> Source: <a href="https://www.w3schools.com">w3schools.com</a> for tutorials on HTML and CSS </footer>
+<!-- Close the body-->
 </body>
+<!-- end of the html file-->
 </html>
