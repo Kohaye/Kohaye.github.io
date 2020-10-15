@@ -1,12 +1,26 @@
+/* since this is a style sheet i don't have to open any sections other than
+the tags i want to change */
+/* just like in the html file, to make comments, I type what i want, highlight it
+and press ctrl+/ so it comments out my highlighted selection */
+
+/* I change h1 to have the text centered, the font size 60px instead of it's natural
+format. I also change the margins of the block text to 20px which I do for each of
+the text tags */
 h1 {
   text-align: center;
   font-size:60px;
   margin-block-start:20px;
   margin-block-end:20px;
 }
+/* here I change the font size to 30px and adjust the margins as previously */
 h3 {
   font-size: 30px;
+  margin-block-start:20px;
+  margin-block-end:20px;
 }
+/* Here i change the font size to 20px for a hierarchy of text (it also fills
+the page better) and change the margins to 20px each. Since <p> contains
+inline capabilities I also set the inline margins */
 p {
   font-size: 20px;
   margin-block-start:20px;
@@ -14,37 +28,85 @@ p {
   margin-inline-end:20px;
   margin-inline-start:20px;
 }
+/* footer is a tag that i can call and here I change its
+background-color to black, add some padding around the font (10px),
+align the text to center, change the font color to white and the
+size to 14px. */
 footer {background-color: black;
   padding:10px;
   text-align:center;
   color:white;
   font-size:14px;
   }
+/* aside is a tag that i can call to have an area that's to one side
+or the other in the body of an html document. Here, i align it to
+the left of the section(i combine it with article inside the 
+section tag) using float:left, add some padding around the photos
+(10px), make the width of the aside 20% of the browser window
+and give the background a nice, darkish green color. i played
+around with the #000 color scheme to figure out which ones I liked */
 aside {
   float: left;
   padding: 10px;
   width: 20%;
   background-color: #660;
 }
+/* here i call the article tag which i set to the right with float:right, 
+remove any innate padding that may have been innate with the default
+stylesheet, and have the area make up 70% of the browser window with
+"width:70%" */
 article {
   float: right;
   padding: 0;
   width: 70%;
 }
+/* I call the section tag, and as I explain in the html documents
+I add ":after" to break the columns once the section is over
+and ensure the footer doesn't display at the top of the
+section. Same reason why I added content:"". display:table lets
+html know that I'm trying to have aside and article in columns
+and clear:both ends the floats of both article and aside
+once the section tag is closed. */
+/* I'm really not 100% sure how or why content:"" and :after parts
+of section work this way but I was fiddling with it from
+https://www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_float
+to learn what happens and it only displays what I want it to
+when I have it the way they did in their "Tryit" */
 section:after {
   content: "";
   display: table;
   clear: both;
 }
+/* I open up a nav tag to give a list of links to be used
+I set the background-color to a nice green that's similar
+to my photos background but just a little bit lighter */
 nav {
   background-color: #880;
 }
+/* i change the list-style type of the unordered lists in my
+html files to none so I don't get any bullets in my lists
+i set the margins and padding to 0 so they mush together
+and set the overflow to hidden to the images and links 
+bump up together */
 ul {
   list-style-type: none;
   margin:0;
   padding:0;
   overflow: hidden;
 }
+/* for the links I set them to float to the left so that they
+sit on top of the images and their background. It's part of my
+design plan and I think it works really well.
+I also display them as block so each link is on their own
+with their own set of padding (14px horizontal and 16px vertical)
+I didn't change it from what was shown in the w3schools tutorial
+for the navigation bar because it just worked with my layout.
+I did play around with it, which is why I know the first size is 
+horizontal and the second is vertical.
+I make the color of the link text white, align them to the center
+of their respective boxes, remove their underline with "text-deco
+ration: none" and give them a dashed border to the right of each
+block with border-right: 2px dashed white (2px width) */
 li a {
   float:left;
   display: block;
@@ -54,8 +116,18 @@ li a {
   text-decoration: none;
   border-right: 2px dashed white;
 }
+/* I make it so that the background color of the link when
+a user hovers over it is the same color of the aside 
+background. It just lines things up and ties in the layout nicely */
 li a:hover {
   background-color: #660;
 }
+/* I set a class to have the background color black. I use this for
+the page the user is on in the navigation bar */
 .active{background-color:black}
+/* I set a class to have image widths=100% of the area they are in
+for an image in the main body it's width is whatever the width of 
+the browser window is. inside the aside or article, the image is then
+whatever the width of that tag has been set to (aside is 20% of the
+browser window and article is 70%) */
 .image{width:100%}
