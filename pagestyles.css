@@ -33,6 +33,7 @@ ul {
 }
 li {
   float: left;
+  border-right: 2px dashed white;
 }
 li a {
   display: block;
@@ -45,3 +46,4 @@ li a:hover {
   background-color: #660;
 }
 .active{background-color:black}
+.image{width:100%}
