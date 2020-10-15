@@ -33,7 +33,7 @@ ul {
   text-align:center;
 }
 li {
-  float: center;
+  float: right;
 }
 li a {
   display: block;
@@ -45,4 +45,4 @@ li a {
 li a:hover {
   background-color: #660;
 }
-
+.active{background-color:black}
