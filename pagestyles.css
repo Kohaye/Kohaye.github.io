@@ -33,7 +33,6 @@ ul {
 }
 li {
   float: left;
-  border-right: 2px dashed white;
 }
 li a {
   display: block;
@@ -41,6 +40,7 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  border-right: 2px dashed white;
 }
 li a:hover {
   background-color: #660;
